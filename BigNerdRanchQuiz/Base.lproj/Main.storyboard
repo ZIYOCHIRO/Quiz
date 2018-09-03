@@ -43,23 +43,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hg-Dg-qxj">
+                                <rect key="frame" x="166.5" y="79" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="XTT-FR-F2V" firstAttribute="centerX" secondItem="0QW-x2-orM" secondAttribute="centerX" id="7CM-KT-AGv"/>
                             <constraint firstItem="ESI-d7-0Rx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="8Zg-dL-IH0"/>
                             <constraint firstItem="M6i-BB-keh" firstAttribute="centerX" secondItem="0QW-x2-orM" secondAttribute="centerX" id="MBG-8W-ONr"/>
+                            <constraint firstItem="8hg-Dg-qxj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Oqs-XQ-zrz"/>
                             <constraint firstItem="XTT-FR-F2V" firstAttribute="top" secondItem="0QW-x2-orM" secondAttribute="bottom" constant="102" id="P9w-oQ-ib6"/>
                             <constraint firstItem="M6i-BB-keh" firstAttribute="top" secondItem="XTT-FR-F2V" secondAttribute="bottom" constant="8" id="Pp0-Uo-8ul"/>
                             <constraint firstItem="0QW-x2-orM" firstAttribute="top" secondItem="ESI-d7-0Rx" secondAttribute="bottom" constant="24" id="TOQ-xM-YEw"/>
                             <constraint firstItem="ESI-d7-0Rx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="beJ-pe-xNl"/>
-                            <constraint firstItem="0QW-x2-orM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pln-2Y-xqj"/>
+                            <constraint firstItem="8hg-Dg-qxj" firstAttribute="top" secondItem="ESI-d7-0Rx" secondAttribute="top" id="h2C-k2-QW4"/>
+                            <constraint firstItem="0QW-x2-orM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lbE-za-HMp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="XTT-FR-F2V" id="6ce-jf-FkL"/>
-                        <outlet property="questionLabel" destination="ESI-d7-0Rx" id="nm5-3J-g73"/>
+                        <outlet property="currentQuestionLabel" destination="ESI-d7-0Rx" id="W3C-6Y-fZX"/>
+                        <outlet property="currentQuestionLabelCenterXConstrains" destination="beJ-pe-xNl" id="lxk-1Q-Yr4"/>
+                        <outlet property="nextQuestionLabel" destination="8hg-Dg-qxj" id="vqo-ms-pCo"/>
+                        <outlet property="nextQuestionLabelCenterXConstrains" destination="Oqs-XQ-zrz" id="Auw-O8-YbN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
